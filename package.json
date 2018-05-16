@@ -1,0 +1,31 @@
+{
+  "name": "json2props",
+  "version": "1.0.0",
+  "description": "JavaScript based converter from JSON files to Properties files",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/barboko/json2props.git"
+  },
+  "keywords": [
+    "converter",
+    "java",
+    "properties",
+    "json"
+  ],
+  "author": "Bar Bokovza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/barboko/json2props/issues"
+  },
+  "homepage": "https://github.com/barboko/json2props#readme",
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "lodash": "^4.17.10",
+    "webpack": "^4.8.3"
+  }
+}
