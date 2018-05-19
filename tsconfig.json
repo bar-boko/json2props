@@ -1,9 +1,9 @@
 {
-	"compilerOptions": {
-		"outDir": "./build/",
-		"noImplicitAny": true,
-		"target": "es6",
-		"sourceMap": true,
-		"allowJs": true
-	}
+  "compilerOptions": {
+    "sourceRoot": "src",
+    "outDir": "dist",
+    "target": "es6",
+    "sourceMap": true,
+    "allowJs": true
+  }
 }

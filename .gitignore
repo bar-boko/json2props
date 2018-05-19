@@ -33,3 +33,5 @@ packages/
 node_modules/
 .vscode/
 /shrinkwrap.yaml
+/dist/*
+/.jshintignore

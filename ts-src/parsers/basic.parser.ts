@@ -6,7 +6,7 @@ import IParser from './parser.interface';
 const ARRAY_DIVIDER = ' ';
 
 export default class ArrayParser implements IParser<any> {
-	isAllowed: (key: string, value: object) => boolean = (key, value) =>
-		!isPlainObject(value) && !isArray(value);
-	parse: (key: string, value: any) => KeyValue = (key, value) => ({key, value});
+  isAllowed: (key: string, value: object) => boolean = (key, value) =>
+    !isPlainObject(value) && !isArray(value);
+  parse: (key: string, value: any) => KeyValue = (key, value) => ({key, value});
 }

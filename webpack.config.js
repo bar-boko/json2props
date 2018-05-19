@@ -1,24 +1,25 @@
-import 'webpack';
-import {join} from 'path';
+// const {join} = require('path');
+// import {join} from 'path';
+const {join} = require('path');
 
 const srcPath = join(__dirname, 'src');
 const distPath = join(__dirname, 'dist');
 
-export default {
+module.exports = {
   context: srcPath,
   entry: {
-    app: 'index.ts',
+    app: './index.ts',
   },
   output: {
     path: distPath,
-    filename: 'bundle.ts',
+    filename: './bundle.js',
   },
   module: {
     rules: [
       {
         test: /\.ts$/,
         include: [srcPath],
-        loader: 'ts-loader',
+        loader: ['babel-loader', 'ts-loader'],
       },
       {
         test: /\.js$/,
@@ -27,5 +28,8 @@ export default {
       },
     ],
   },
-  devtool: 'source-map',
+  resolve: {
+    extensions: ['.webpack.js', '.ts', '.web.js', '.js', '.json'],
+  },
+  devtool: 'eval-source-map',
 };
