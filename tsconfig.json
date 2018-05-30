@@ -1,9 +1,0 @@
-{
-  "compilerOptions": {
-    "sourceRoot": "src",
-    "outDir": "dist",
-    "target": "es6",
-    "sourceMap": true,
-    "allowJs": true
-  }
-}
